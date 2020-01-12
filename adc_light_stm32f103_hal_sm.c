@@ -71,8 +71,7 @@ extern ADC_HandleTypeDef hadc1;
 */
 
 
-uint32_t ADC1_GetValue(uint32_t channel)
-{
+uint32_t ADC1_GetValue(uint32_t channel) {
     /* Config ADC channel */
     ADC_ChannelConfTypeDef sConfig;
     sConfig.Channel = channel;
