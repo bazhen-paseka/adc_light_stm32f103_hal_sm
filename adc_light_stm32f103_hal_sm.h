@@ -18,7 +18,7 @@
 **************************************************************************
 */
 
-#include "stm32f1xx_hal.h"
+#include "main.h"
 #include "adc.h"
 
 /*
@@ -51,6 +51,6 @@
 **************************************************************************
 */
 
-uint32_t ADC1_GetValue(uint32_t channel);
+uint32_t ADC1_GetValue(ADC_HandleTypeDef *_hadc, uint32_t channel);
 
 #endif /* _H_ */
