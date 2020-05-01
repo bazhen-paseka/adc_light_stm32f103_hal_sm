@@ -9,8 +9,8 @@
 *************************************************************************************
 */
 
-#ifndef _H_
-#define _H_
+#ifndef ADC_LIGHT_STM32F103_HAL_INCLUDED_H_
+#define ADC_LIGHT_STM32F103_HAL_INCLUDED_H_
 
 /*
 **************************************************************************
@@ -18,8 +18,8 @@
 **************************************************************************
 */
 
-#include "main.h"
-#include "adc.h"
+	#include "main.h"
+	#include "adc.h"
 
 /*
 **************************************************************************
@@ -51,6 +51,8 @@
 **************************************************************************
 */
 
-uint32_t ADC1_GetValue(ADC_HandleTypeDef *_hadc, uint32_t channel);
+	uint32_t ADC1_GetValue(ADC_HandleTypeDef *_hadc, uint32_t channel);
 
-#endif /* _H_ */
+	//	uint32_t adc_u32 = ADC1_GetValue( &hadc, ADC_CHANNEL_5 );
+
+#endif /* ADC_LIGHT_STM32F103_HAL_INCLUDED_H_ */
