@@ -71,20 +71,20 @@
 */
 
 
-uint32_t ADC1_GetValue(ADC_HandleTypeDef * _hadc, uint32_t channel) {
-    /* Config ADC channel */
-    ADC_ChannelConfTypeDef sConfig;
-    sConfig.Channel = channel;
-    sConfig.Rank = 1;
-    //sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
-    HAL_ADC_ConfigChannel(_hadc, &sConfig);
-    /* Start conversion */
-    HAL_ADC_Start(_hadc);
-    /* Wait until finish */
-    HAL_ADC_PollForConversion(_hadc, 100);
-    uint32_t value = HAL_ADC_GetValue(_hadc);
-    HAL_ADC_Stop(_hadc);
-    return value;
+uint32_t ADC1_GetValue(	ADC_HandleTypeDef * _hadc	,
+						uint32_t channel			) {
+
+    ADC_ChannelConfTypeDef	sConfig						;
+    sConfig.Channel 		= channel					;
+    sConfig.Rank 			= 1							;
+    sConfig.SamplingTime 	= ADC_SAMPLETIME_13CYCLES_5	;
+    HAL_ADC_ConfigChannel( _hadc, &sConfig);
+
+    HAL_ADC_Start( _hadc ) ;	//	 Start conversion
+    HAL_ADC_PollForConversion( _hadc , 100 ) ;	//	Wait until finish
+    uint32_t value_u32 = HAL_ADC_GetValue( _hadc ) ;
+    HAL_ADC_Stop( _hadc ) ;
+    return value_u32;
 }
 //*****************************************************************************
 
