@@ -50,8 +50,8 @@
 *                              FUNCTION PROTOTYPES
 **************************************************************************
 */
-
-	uint32_t ADC1_GetValue(ADC_HandleTypeDef *_hadc, uint32_t channel);
+	HAL_StatusTypeDef	ADC1_Init(		ADC_HandleTypeDef *_hadc, uint32_t channel ) ;
+	uint32_t			ADC1_GetValue(	ADC_HandleTypeDef *_hadc, uint32_t channel ) ;
 
 	//	uint32_t adc_u32 = ADC1_GetValue( &hadc1, ADC_CHANNEL_5 );
 
