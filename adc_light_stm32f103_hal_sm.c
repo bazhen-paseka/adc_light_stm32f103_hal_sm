@@ -14,7 +14,7 @@
 *							INCLUDE FILES
 **************************************************************************
 */
-
+#ifdef ADC
 #include "adc_light_stm32f103_hal_sm.h"
 //extern ADC_HandleTypeDef hadc1;
 
@@ -96,3 +96,4 @@ uint32_t ADC1_GetValue(	ADC_HandleTypeDef * _hadc	,
 *                           LOCAL FUNCTIONS
 **************************************************************************
 */
+#endif
