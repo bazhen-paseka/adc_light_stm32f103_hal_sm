@@ -14,8 +14,8 @@
 *							INCLUDE FILES
 **************************************************************************
 */
-#ifdef ADC_LORA
 #include "adc_light_stm32f103_hal_sm.h"
+#ifdef ADC_MODULE
 //extern ADC_HandleTypeDef hadc1;
 
 /*
