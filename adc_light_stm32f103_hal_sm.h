@@ -11,13 +11,15 @@
 
 #ifndef ADC_LIGHT_STM32F103_HAL_INCLUDED_H_
 #define ADC_LIGHT_STM32F103_HAL_INCLUDED_H_
-#ifdef ADC
+
 /*
 **************************************************************************
 *								INCLUDE FILES
 **************************************************************************
 */
+	#include "ADC_local_config.h"
 
+#ifdef ADC_LORA
 	#include "main.h"
 	#include "adc.h"
 
