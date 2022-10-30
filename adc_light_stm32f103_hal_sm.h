@@ -19,7 +19,7 @@
 */
 	#include "ADC_local_config.h"
 
-#ifdef ADC_LORA
+#ifdef ADC_EN
 	#include "main.h"
 	#include "adc.h"
 
