@@ -58,3 +58,14 @@
 	//	uint32_t adc_u32 = ADC1_GetValue( &hadc1, ADC_CHANNEL_5 );
 #endif
 #endif /* ADC_LIGHT_STM32F103_HAL_INCLUDED_H_ */
+
+	/*
+	 *float temp;
+	 *float float v25 = 1.43;
+	 *float Avg_Slope = .0043;
+	 *float VSENSE = 3.3/4096;
+	 *float get_temp(uint32_t variable) {
+	 *	VSENSE = VSENSE * variable;
+	 *	return (((V25-VSENSE) / Avg_Slope)+25);
+	 *}
+	 */
