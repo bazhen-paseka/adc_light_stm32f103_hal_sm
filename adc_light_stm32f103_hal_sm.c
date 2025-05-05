@@ -14,6 +14,7 @@
 *							INCLUDE FILES
 **************************************************************************
 */
+	#include "Local_config.h"
 #include "adc_light_stm32f103_hal_sm.h"
 #ifdef ADC_MODULE
 //extern ADC_HandleTypeDef hadc1;

@@ -17,9 +17,9 @@
 *								INCLUDE FILES
 **************************************************************************
 */
-	#include "ADC_local_config.h"
 
-#ifdef ADC_EN
+	#include "Local_config.h"
+#ifdef ADC_MODULE
 	#include "main.h"
 	#include "adc.h"
 
